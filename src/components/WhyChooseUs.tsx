@@ -3,20 +3,12 @@ import { Check } from "lucide-react";
 
 export function WhyChooseUs() {
   const benefits = [
-    {
-      title: "Professional and Trusted Service",
-      description:
-        "Dengan Pengalaman kami pastikan tempat anda bebas dari hama.",
-    },
-    {
-      title: "Komprehensif dan Solusi Terintegrasi",
-      description:
-        "Kami menawarkan solusi berbagai kebutuhan sesuai usaha anda.",
-    },
-    {
-      title: "Kepuasan anda adalah Tujuan Kami",
-      description: "Kami selalu berusaha memuaskan semua konsumen kami",
-    },
+    { title: "Menjaga privasi Anda" },
+    { title: "Menyediakan terapis profesional" },
+    { title: "Lebih mendukung efisiensi waktu Customer" },
+    { title: "Tidak perlu pusing kemacetan" },
+    { title: "Kami menghubungkan customer dengan terapis profesional" },
+    { title: "Membantu menemukan layanan yang dibutuhkan Customer" },
   ];
 
   return (
@@ -32,7 +24,7 @@ export function WhyChooseUs() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/images/jghm3.jpg"
+                src="/images/whycus.webp"
                 alt="Why Choose Us"
                 className="w-full h-[500px] object-cover"
               />
@@ -51,13 +43,24 @@ export function WhyChooseUs() {
               Mengapa Harus Memilih Kami?
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed">
-              Kami menyediakan pest control yang profesional, efisien, dan aman
-              di Jakarta. Dengan tim terlatih dan menggunakan teknologi terkini,
-              kami menjamin kebersihan optimal dan pencegahan hama yang efektif
-              untuk rumah, kantor, dan properti komersial. Kami berkomitmen
-              untuk memberikan layanan yang berkualitas tinggi, memprioritaskan
-              keamanan serta kepuasan pelanggan sebagai fokus utama dalam setiap
-              pekerjaan yang kami lakukan.
+              Istirahat saja kadang tidak cukup untuk membantu tubuh pulih,
+              sehingga Pijat Mom-Hom sering menjadi solusi pilihan ketika badan
+              pegal-pegal dan kecapekan. Mom-Hom solusi terbaik memijat dengan
+              lembut dan bertenaga merupakan terapi tradisional yang
+              bersertifikat mampu mengatasi berbagai keluhan, mulai dari
+              kelelahan hingga masuk angin.
+            </p>
+            <p className="text-lg text-slate-600 leading-relaxed">
+              Kota besar seperti Jakarta, Bogor, Bekasi, Depok dan Tangerang
+              merupakan kota terpadat dan membuat badan butuh relaksasi, agar
+              badan lebih rilek dan segar. Mom-Hom menyediakan tenaga
+              profesional dan bersertifikat sesuai keahlian terapi. Tenaga bisa
+              memilih sesuai pelanggan inginkan.
+            </p>
+            <p className="text-lg text-slate-600 leading-relaxed">
+              Oleh karena itu Mom-Hom merupakan jasa panggilan 24 jam agar dapat
+              memberikan layanan 24 Jam dan terapis datang ke lokasi customer.
+              Keuntungan yang didapatkan memilih kami:
             </p>
 
             {/* Benefits List */}
@@ -75,10 +78,9 @@ export function WhyChooseUs() {
                     <Check className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">
+                    <h3 className="font-semibold text-slate-900">
                       {benefit.title}
                     </h3>
-                    <p className="text-slate-600">{benefit.description}</p>
                   </div>
                 </motion.div>
               ))}

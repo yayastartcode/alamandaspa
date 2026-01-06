@@ -23,14 +23,14 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24">
+        <div className="flex justify-between items-center h-32">
           {/* Logo */}
           <div className="flex items-center">
             <a href="/" className="block">
               <img
-                src="/images/fndlg.png"
+                src="/images/momhomlg.png"
                 alt="FND Logo"
-                className="h-20 w-auto object-contain"
+                className="h-24 w-auto rounded-3xl object-contain"
               />
             </a>
           </div>
@@ -48,7 +48,7 @@ export function Header() {
             ))}
             <Button
               size="sm"
-              className="bg-red-600 hover:bg-red-700"
+              className="bg-green-600 hover:bg-green-700"
               onClick={handleContactClick}
             >
               Hubungi Kami
@@ -95,7 +95,7 @@ export function Header() {
               </a>
             ))}
             <Button
-              className="w-full bg-red-600 hover:bg-red-700"
+              className="w-full bg-green-600 hover:bg-green-700"
               size="sm"
               onClick={handleContactClick}
             >

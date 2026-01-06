@@ -9,31 +9,24 @@ import {
 export function FAQSection() {
   const faqs = [
     {
-      question: "Berapa lama proses pengendalian hama dilakukan?",
-      answer:
-        "Proses pengendalian hama biasanya memakan waktu 1-3 jam tergantung pada luas area dan tingkat infestasi. Untuk treatment khusus seperti fumigasi, bisa memakan waktu lebih lama. Tim kami akan memberikan estimasi waktu yang lebih akurat setelah melakukan inspeksi awal.",
+      question: "Apakah layanan massage tersedia 24 jam?",
+      answer: "Ya, layanan kami tersedia 24 jam setiap hari termasuk hari libur. Anda bisa memesan kapan saja sesuai kebutuhan.",
     },
     {
-      question: "Apakah layanan ini aman untuk anak-anak dan hewan peliharaan?",
-      answer:
-        "Ya, kami menggunakan produk yang aman dan telah terdaftar secara resmi. Namun, untuk keamanan maksimal, kami menyarankan anak-anak dan hewan peliharaan untuk menjauh dari area treatment selama 2-4 jam setelah aplikasi. Tim kami akan memberikan instruksi keamanan yang lengkap sebelum dan setelah treatment.",
+      question: "Bagaimana cara memesan layanan massage?",
+      answer: "Cukup hubungi kami via WhatsApp, pilih jenis layanan yang diinginkan, dan terapis kami akan datang ke lokasi Anda.",
     },
     {
-      question:
-        "Bagaimana jika hama muncul kembali setelah layanan pest control?",
-      answer:
-        "Kami memberikan garansi layanan untuk setiap treatment yang dilakukan. Jika hama muncul kembali dalam periode garansi, kami akan melakukan re-treatment tanpa biaya tambahan. Durasi garansi bervariasi tergantung jenis layanan yang dipilih, biasanya 1-3 bulan untuk treatment standar.",
+      question: "Area mana saja yang dilayani?",
+      answer: "Kami melayani area Jabodetabek meliputi Jakarta, Tangerang, Bogor, Bekasi, dan Depok.",
     },
     {
-      question:
-        "Apakah Jaga Hama melayani perusahaan atau hanya rumah tinggal?",
-      answer:
-        "Kami melayani baik residensial (rumah tinggal) maupun komersial (kantor, gudang, pabrik, hotel, restoran, dll). Kami memiliki tim dan peralatan khusus untuk menangani berbagai skala proyek, dari rumah kecil hingga bangunan komersial besar.",
+      question: "Apakah terapis sudah bersertifikat?",
+      answer: "Ya, semua terapis kami sudah profesional dan bersertifikat sesuai keahlian terapi masing-masing.",
     },
     {
-      question: "Bagaimana cara memesan layanan pest control?",
-      answer:
-        "Anda dapat memesan layanan kami dengan mengisi form reservasi di website ini, menghubungi kami melalui WhatsApp, atau telepon langsung. Tim customer service kami akan menghubungi Anda untuk konfirmasi jadwal dan melakukan konsultasi awal mengenai masalah hama yang Anda hadapi.",
+      question: "Berapa lama durasi massage?",
+      answer: "Durasi massage bervariasi tergantung jenis layanan yang dipilih, mulai dari 60 menit hingga 120 menit.",
     },
   ];
 
@@ -43,7 +36,7 @@ export function FAQSection() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url(/images/jghm5.jpg)",
+          backgroundImage: "url(/images/heromom.jpg)",
         }}
       />
       <div className="absolute inset-0 bg-slate-800/70" />
@@ -61,9 +54,9 @@ export function FAQSection() {
             FAQS
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Pertanyaan Seputar Jasa Pengendalian Hama
+            Pertanyaan Seputar Layanan
             <br />
-            Rumah dan Kantor
+            Massage Panggilan 24 Jam
           </h2>
         </motion.div>
 

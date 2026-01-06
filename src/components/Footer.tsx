@@ -1,15 +1,17 @@
-import { Bug, Rat, Shield, Wind, CircleDot, Snail, Zap } from "lucide-react";
-
 export function Footer() {
   const services = [
-    { name: "Jasa Pembasmi Hama", icon: Bug },
-    { name: "Jasa Fogging", icon: Wind },
-    { name: "Jasa Anti Rayap", icon: Shield },
-    { name: "Jasa Pembasmi Tawon", icon: CircleDot },
-    { name: "Jasa Pembasmi Tikus", icon: Rat },
-    { name: "Jasa Pembasmi Lalat", icon: Bug },
-    { name: "Jasa Pembasmi Kutu", icon: Snail },
-    { name: "Jasa Basmi Ular", icon: Zap },
+    "Tradisional Massage",
+    "Massage + Lulur",
+    "Swedish Massage",
+    "Deep Massage",
+    "Vitalitas Massage",
+    "Thai Massage + Kretek",
+    "Shiatsu Massage",
+    "Balinese Massage",
+    "Javanese Massage",
+    "Sport Massage",
+    "Full Body Massage & Refleksi",
+    "Bekam Basah",
   ];
 
   const currentYear = new Date().getFullYear();
@@ -22,31 +24,22 @@ export function Footer() {
           <div className="lg:col-span-1">
             <img
               src="/images/fndlg.png"
-              alt="Jagahama Logo"
+              alt="Mom-Hom Logo"
               className="h-16 w-auto object-contain mb-4 bg-white rounded-lg p-2"
             />
             <p className="text-slate-400 leading-relaxed mb-4">
-              Solusi profesional untuk pengendalian hama di Jakarta. Kami
-              berkomitmen memberikan layanan terbaik untuk kenyamanan Anda.
+              Mom-Hom solusi terbaik untuk pijat dan terapi tradisional bersertifikat. Layanan 24 jam dengan terapis profesional datang ke lokasi Anda.
             </p>
           </div>
 
           {/* Services */}
           <div className="lg:col-span-2">
             <h3 className="text-xl font-bold mb-6">Layanan Kami</h3>
-            <div className="grid sm:grid-cols-2 gap-4">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
               {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-3 group cursor-pointer"
-                >
-                  <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center group-hover:bg-blue-600 transition-colors">
-                    <service.icon className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" />
-                  </div>
-                  <span className="text-slate-300 group-hover:text-white transition-colors">
-                    {service.name}
-                  </span>
-                </div>
+                <span key={index} className="text-slate-300 text-sm">
+                  {service}
+                </span>
               ))}
             </div>
           </div>
@@ -56,7 +49,7 @@ export function Footer() {
         <div className="border-t border-slate-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm">
-              © {currentYear} F&D Pest Control. All rights reserved.
+              © {currentYear} Mom-Hom. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm text-slate-400">
               <a href="#" className="hover:text-white transition-colors">

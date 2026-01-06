@@ -12,14 +12,23 @@ export function ReservationForm() {
   })
 
   const services = [
-    'Jasa Pembasmi Hama',
-    'Jasa Fogging',
-    'Jasa Anti Rayap',
-    'Jasa Pembasmi Tawon',
-    'Jasa Pembasmi Tikus',
-    'Jasa Pembasmi Lalat',
-    'Jasa Pembasmi Kutu',
-    'Jasa Basmi Ular',
+    'Tradisional Massage',
+    'Massage + Lulur',
+    'Swedish Massage',
+    'Deep Massage',
+    'Vitalitas Massage',
+    'Thai Massage + Kretek',
+    'Totok Wajah + Full Body Massage',
+    'Shiatsu Massage',
+    'Balinese Massage',
+    'Javanese Massage',
+    'Kerokan',
+    'Brazilian Waxing',
+    'Bekam Basah',
+    'Sport Massage',
+    'Full Body Massage & Refleksi',
+    'Totok Wajah',
+    'Akupuntur',
   ]
 
   const handleSubmit = (e: FormEvent) => {

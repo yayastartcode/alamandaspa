@@ -8,7 +8,7 @@ export function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url(/images/herofd.png)",
+          backgroundImage: "url(/images/heromom.jpg)",
         }}
       />
 
@@ -29,7 +29,7 @@ export function Hero() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900"
           >
-            F&D Pest Control
+            Mom-Hom Spa & Massage Panggilan 24 Jam
           </motion.h1>
 
           <motion.p
@@ -38,7 +38,13 @@ export function Hero() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl sm:text-2xl text-slate-900 max-w-3xl mx-auto font-medium"
           >
-            Jasa Pembasmi Hama dan Serangga Mitra SPPG MBG
+            Kami menawarkan berbagai layanan Pijat tradisional, Massage, Full
+            body treatment, Aroma therapy massage, langsung di lokasi ANDA. Anda
+            tidak perlu lagi terjebak macet atau antre di salon kebugaran. Kami
+            hadir membawa relaksasi langsung ke rumah, apartemen, atau bahkan
+            hotel Anda. Anda tidak perlu lagi terjebak macet atau antre di salon
+            kebugaran. Kami hadir membawa relaksasi langsung ke rumah,
+            apartemen, atau bahkan hotel Anda.
           </motion.p>
 
           <motion.div
