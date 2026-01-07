@@ -147,7 +147,7 @@ export function ServicesSection() {
                   {service.description}
                 </p>
                 <a
-                  href={`https://wa.me/${WA_NUMBER}?text=Halo, saya ingin booking ${service.title}`}
+                  href={`https://wa.me/${WA_NUMBER}?text=Halo, saya ingin bertanya tentang layanan Anda tentang Momhom SPA dan Massage`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors"
