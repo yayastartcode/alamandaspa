@@ -15,7 +15,7 @@ export function Header() {
 
   const handleContactClick = () => {
     window.open(
-      getWhatsAppLink("Halo, saya ingin bertanya tentang layanan Anda"),
+      getWhatsAppLink("Halo, saya ingin bertanya tentang layanan Anda tentang Momhom SPA dan Massage"),
       "_blank"
     );
   };

@@ -67,7 +67,7 @@ export function ContactMap() {
                 <div>
                   <h3 className="text-xl font-bold text-slate-900 mb-2">Hubungi Kami</h3>
                   <a
-                    href={getWhatsAppLink()}
+                    href={getWhatsAppLink("Halo, saya ingin bertanya tentang layanan Anda tentang Momhom SPA dan Massage")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-2xl font-bold text-green-600 hover:text-green-700 transition-colors"
