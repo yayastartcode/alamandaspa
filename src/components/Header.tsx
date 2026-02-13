@@ -15,7 +15,7 @@ export function Header() {
 
   const handleContactClick = () => {
     window.open(
-      getWhatsAppLink("Halo, saya ingin bertanya tentang layanan Anda tentang Momhom SPA dan Massage"),
+      getWhatsAppLink("Halo, saya ingin bertanya tentang layanan Anda tentang Alamanda SPA dan Massage"),
       "_blank"
     );
   };
@@ -28,8 +28,8 @@ export function Header() {
           <div className="flex items-center">
             <a href="/" className="block">
               <img
-                src="/images/momhomlg.png"
-                alt="FND Logo"
+                src="/images/almlg.jpeg"
+                alt="Alamanda Logo"
                 className="h-24 w-auto rounded-3xl object-contain"
               />
             </a>

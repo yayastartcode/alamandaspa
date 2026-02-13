@@ -13,31 +13,20 @@ export function ReservationForm() {
   })
 
   const services = [
-    'Tradisional Massage',
-    'Massage + Lulur',
-    'Swedish Massage',
-    'Deep Massage',
-    'Vitalitas Massage',
-    'Thai Massage + Kretek',
-    'Totok Wajah + Full Body Massage',
-    'Shiatsu Massage',
-    'Balinese Massage',
-    'Javanese Massage',
-    'Kerokan',
-    'Brazilian Waxing',
-    'Bekam Basah',
-    'Sport Massage',
-    'Full Body Massage & Refleksi',
-    'Totok Wajah',
-    'Akupuntur',
+    'Traditional Massage - Rp 300.000 (60 mnt)',
+    'Scrub Rileks Massage - Rp 400.000 (90 mnt)',
+    'Swedish Massage - Rp 350.000 (60 mnt)',
+    'Sport Massage - Rp 450.000 (120 mnt)',
+    'Balinese Massage - Rp 350.000 (90 mnt)',
+    'Treatment Kerik - Rp 100.000',
   ]
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
-    
+
     // Build WhatsApp message
     const message = `Halo, saya ingin reservasi layanan:\n\nNama: ${formData.name}\nNo WhatsApp: ${formData.whatsapp}\nAlamat: ${formData.address}\nLayanan: ${formData.service}`
-    
+
     // Open WhatsApp using centralized config
     window.open(getWhatsAppLink(message), '_blank')
   }

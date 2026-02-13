@@ -2,109 +2,56 @@ import { motion } from "motion/react";
 
 const services = [
   {
-    title: "Tradisional Massage",
+    title: "Traditional Massage",
+    price: "Rp 300.000",
+    duration: "60 mnt",
     description:
-      "Tradisional Massage sangat Cocok untuk yang butuh pelepas penat setelah hari yang padat. Menggunakan teknik pijat tradisional untuk melancarkan peredaran darah dan meredakan ketegangan otot.",
+      "Tradisional Massage sangat Cocok untuk yang butuh pelepas penat setelah hari yang padat. Melancarkan peredaran darah dan meredakan ketegangan otot.",
     image: "/images/service/tradisionalmesage.jpg",
   },
   {
-    title: "Massage + Lulur",
+    title: "Scrub Rileks Massage",
+    price: "Rp 400.000",
+    duration: "90 mnt",
     description:
-      "Relaksasi tubuh + scrup kulit untuk mengangkat sel kulit mati dan mencerahkan kulit",
+      "Relaksasi tubuh + scrub kulit untuk mengangkat sel kulit mati dan mencerahkan kulit, membuat tubuh segar kembali.",
     image: "/images/service/massagelulur.jpg",
   },
   {
     title: "Swedish Massage",
+    price: "Rp 350.000",
+    duration: "60 mnt",
     description:
-      "Swedish teknik pijat khas Eropa dengan pijatan lembut dan ritme lambat. Membantu meredakan stres, meningkatkan sirkulasi, dan membawa ketenangan yang dalam.",
+      "Teknik pijat khas Eropa dengan pijatan lembut dan ritme lambat. Membantu meredakan stres, meningkatkan sirkulasi, dan membawa ketenangan.",
     image: "/images/service/swedishmassage.jpg",
   },
   {
-    title: "Deep Massage",
-    description:
-      "Teknik pijat yang berfokus pada pemecahan perlengketan (adhesi) dan ketegangan pada otot dan jaringan ikat yang lebih dalam",
-    image: "/images/service/deepmassage.jpg",
-  },
-  {
-    title: "Vitalitas Massage",
-    description:
-      "Vitalitas Pijat & wanita untuk meningkatkan stamina, melancarkan sirkulasi darah, dan menjaga kebugaran tubuh. Membantu mengurangi kelelahan, pegal, serta menjaga vitalitas secara alami.",
-    image: "/images/service/vitalitasmassage.jpg",
-  },
-  {
-    title: "Thai Massage + Kretek",
-    description:
-      "Thai massage dapat membantu meredakan stres, meningkatkan fleksibilitas, mengurangi ketegangan otot, meningkatkan aliran energi, dan memberikan relaksasi secara keseluruhan.",
-    image: "/images/service/thaimassage.jpg",
-  },
-  {
-    title: "Totok Wajah + Full Body Massage",
-    description:
-      "Pijat lembut full body + wajah membuat syaraf dapat menenangkan pikiran dan tubuh. Cocok untuk meredakan stres, menyeimbangkan emosi, dan membantu tidur lebih nyenyak",
-    image: "/images/service/totokwajah.jpg",
-  },
-  {
-    title: "Shiatsu Massage",
-    description:
-      "Untuk melancarkan energi vital dan meredakan ketegangan otot, serta meningkatkan relaksasi dan kesejahteraan secara keseluruhan.",
-    image: "/images/service/shiatsu.jpg",
-  },
-  {
-    title: "Balinese Massage",
-    description:
-      "Menggabungkan berbagai teknik pijat, akupresur, refleksiologi, dan aromaterapi untuk memberikan pengalaman relaksasi yang menyeluruh",
-    image: "/images/service/balinese.jpg",
-  },
-  {
-    title: "Javanese Massage",
-    description:
-      "Untuk melancarkan energi vital (qi) dan meredakan ketegangan otot, serta meningkatkan relaksasi dan kesejahteraan secara keseluruhan",
-    image: "/images/service/javanese.jpg",
-  },
-  {
-    title: "Kerokan",
-    description:
-      "Meringankan dan membantu rileksasi dan mengeluarkan angin dalam tubuh, membuat tubuh menjadi segar kembali",
-    image: "/images/service/kerokan.jpg",
-  },
-  {
-    title: "Brazilian Waxing",
-    description:
-      "Metode hair removal yang populer untuk area kemaluan, termasuk area bikini dan sekitarnya, menggunakan lilin panas yang ditarik untuk mencabut rambut dari akarnya.",
-    image: "/images/service/brazilianwaxing.jpg",
-  },
-  {
-    title: "Bekam Basah",
-    description:
-      "Meningkatkan ketahanan tubuh menjadi lebih sehat dan membatu kelancaran peredaran darah",
-    image: "/images/service/bekambasah.jpg",
-  },
-  {
     title: "Sport Massage",
+    price: "Rp 450.000",
+    duration: "120 mnt",
     description:
-      "Meregangkan otot yang tegang, sport massage juga dapat merangsang otot yang tidak aktif dan memperbaiki kondisi jaringan lunak",
+      "Meregangkan otot yang tegang, merangsang otot yang tidak aktif dan memperbaiki kondisi jaringan lunak. Cocok untuk pemulihan aktivitas fisik.",
     image: "/images/service/sportmassage.jpg",
   },
   {
-    title: "Full Body Massage & Refleksi",
+    title: "Balinese Massage",
+    price: "Rp 350.000",
+    duration: "90 mnt",
     description:
-      "Perpaduan massage seluruh badan dan refleksi yang memberikan manfaat yang lebih banyak pada tubuh Anda",
-    image: "/images/service/fullbodymassage.jpg",
+      "Menggabungkan berbagai teknik pijat, akupresur, refleksiologi, dan aromaterapi untuk memberikan pengalaman relaksasi yang menyeluruh.",
+    image: "/images/service/balinese.jpg",
   },
   {
-    title: "Totok Wajah",
-    description: "Meningkatkan kecerahan wajah menjadi lebih awet muda",
-    image: "/images/service/ttkwjh.jpg",
-  },
-  {
-    title: "Akupuntur",
+    title: "Treatment Kerik",
+    price: "Rp 100.000",
+    duration: "",
     description:
-      "Membatu syaraf kecerahan, mengencangkan wajah, melasma, menunda ketuaan, membuat awet muda",
-    image: "/images/service/akupuntur.jpg",
+      "Meringankan dan membantu relaksasi, mengeluarkan angin dalam tubuh, membuat tubuh menjadi segar kembali.",
+    image: "/images/service/kerokan.jpg",
   },
 ];
 
-const WA_NUMBER = "6281996151615";
+const WA_NUMBER = "081298303336";
 
 export function ServicesSection() {
   return (
@@ -132,25 +79,40 @@ export function ServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
+              className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden flex flex-col"
             >
               <img
                 src={service.image}
                 alt={service.title}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-slate-600 text-sm mb-4">
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="flex justify-between items-start mb-2">
+                  <h3 className="text-xl font-bold text-slate-900">
+                    {service.title}
+                  </h3>
+                </div>
+
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-blue-600 font-bold text-lg">
+                    {service.price}
+                  </span>
+                  {service.duration && (
+                    <span className="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded-full">
+                      {service.duration}
+                    </span>
+                  )}
+                </div>
+
+                <p className="text-slate-600 text-sm mb-6 flex-grow">
                   {service.description}
                 </p>
+
                 <a
-                  href={`https://wa.me/${WA_NUMBER}?text=Halo, saya ingin bertanya tentang layanan Anda tentang Momhom SPA dan Massage`}
+                  href={`https://wa.me/${WA_NUMBER}?text=Halo, saya ingin reservasi layanan ${service.title} (${service.price})`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors mt-auto w-full"
                 >
                   <svg
                     className="w-5 h-5"

@@ -8,17 +8,14 @@ import {
 
 export function FAQSection() {
   const faqs = [
-    {
-      question: "Apakah layanan massage tersedia 24 jam?",
-      answer: "Ya, layanan kami tersedia 24 jam setiap hari termasuk hari libur. Anda bisa memesan kapan saja sesuai kebutuhan.",
-    },
+
     {
       question: "Bagaimana cara memesan layanan massage?",
       answer: "Cukup hubungi kami via WhatsApp, pilih jenis layanan yang diinginkan, dan terapis kami akan datang ke lokasi Anda.",
     },
     {
       question: "Area mana saja yang dilayani?",
-      answer: "Kami melayani area Jabodetabek meliputi Jakarta, Tangerang, Bogor, Bekasi, dan Depok.",
+      answer: "Kami melayani area Bogor dan sekitarnya.",
     },
     {
       question: "Apakah terapis sudah bersertifikat?",
@@ -56,7 +53,7 @@ export function FAQSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Pertanyaan Seputar Layanan
             <br />
-            Massage Panggilan 24 Jam
+            Alamanda Spa
           </h2>
         </motion.div>
 

@@ -1,17 +1,11 @@
 export function Footer() {
   const services = [
-    "Tradisional Massage",
-    "Massage + Lulur",
+    "Traditional Massage",
+    "Scrub Rileks Massage",
     "Swedish Massage",
-    "Deep Massage",
-    "Vitalitas Massage",
-    "Thai Massage + Kretek",
-    "Shiatsu Massage",
-    "Balinese Massage",
-    "Javanese Massage",
     "Sport Massage",
-    "Full Body Massage & Refleksi",
-    "Bekam Basah",
+    "Balinese Massage",
+    "Treatment Kerik",
   ];
 
   const currentYear = new Date().getFullYear();
@@ -23,14 +17,13 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="lg:col-span-1">
             <img
-              src="/images/momhomlg.png"
-              alt="Mom-Hom Logo"
+              src="/images/almlg.jpeg"
+              alt="Alamanda Spa Logo"
               className="h-16 w-auto object-contain mb-4 bg-white rounded-lg p-2"
             />
             <p className="text-slate-400 leading-relaxed mb-4">
-              Mom-Hom solusi terbaik untuk pijat dan terapi tradisional
-              bersertifikat. Layanan 24 jam dengan terapis profesional datang ke
-              lokasi Anda.
+              Alamanda Spa solusi terbaik untuk pijat dan terapi tradisional
+              bersertifikat.
             </p>
           </div>
 
@@ -51,7 +44,7 @@ export function Footer() {
         <div className="border-t border-slate-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm">
-              © {currentYear} Mom-Hom. All rights reserved.
+              © {currentYear} Alamanda Spa. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm text-slate-400">
               <a href="#" className="hover:text-white transition-colors">

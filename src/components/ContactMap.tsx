@@ -1,91 +1,53 @@
 import { motion } from "motion/react";
-import { MapPin, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import { getWhatsAppLink, formatWhatsAppNumber } from "@/lib/config";
-
-const locations = [
-  "Jakarta Selatan",
-  "Jakarta Timur",
-  "Jakarta Utara",
-  "Jakarta Barat",
-  "Tangerang Kota",
-  "Tangerang Selatan",
-  "Bekasi Kota",
-  "Bekasi Kabupaten",
-  "Depok",
-  "Bogor",
-];
 
 export function ContactMap() {
   return (
-    <section id="contact" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="relative h-[600px] w-full bg-slate-100">
+      {/* Google Maps Embed Fullwidth */}
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2251770640746!2d106.80867019164567!3d-6.618924476293817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5f7a5c86783%3A0x7bcc692f48c86178!2sR9%20massage%20%26%20refleksi!5e0!3m2!1sid!2sid!4v1770988965308!5m2!1sid!2sid"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Google Maps Location"
+        className="absolute inset-0 w-full h-full grayscale brightness-110 contrast-125 opacity-90 hover:grayscale-0 transition-all duration-700"
+      />
+
+      {/* Contact Overlay */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 sm:left-8 sm:translate-x-0 z-10 w-full max-w-sm px-4 sm:px-0">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          transition={{ duration: 0.5 }}
+          className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border border-white/20"
         >
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Area Layanan</h2>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            Nikmati pengalaman pijat tanpa perlu meninggalkan rumah. Kami siap mendatangi Anda di manapun dan kapanpun, terutama di wilayah Jakarta, Tangerang, Bogor, Bekasi, Depok dan sekitarnya. Layanan kami tersedia sepanjang hari selama 24 jam. Pesanlah langsung melalui WhatsApp tanpa perlu mengunduh aplikasi tambahan.
-          </p>
+          <div className="flex items-center gap-4">
+            <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg animate-pulse">
+              <Phone className="w-7 h-7 text-white" />
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1">
+                Hubungi Kami
+              </h3>
+              <a
+                href={getWhatsAppLink(
+                  "Halo, saya ingin bertanya tentang layanan Anda tentang Alamanda SPA dan Massage"
+                )}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl font-bold text-slate-900 hover:text-green-600 transition-colors block"
+              >
+                {formatWhatsAppNumber()}
+              </a>
+            </div>
+          </div>
         </motion.div>
-
-        <div className="grid lg:grid-cols-2 gap-8">
-          {/* Locations */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 shadow-lg"
-          >
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                <MapPin className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900">Lokasi</h3>
-            </div>
-            <div className="grid grid-cols-2 gap-3">
-              {locations.map((loc, i) => (
-                <span key={i} className="text-slate-700">{loc}</span>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* WhatsApp & Hours */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 shadow-lg">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">Hubungi Kami</h3>
-                  <a
-                    href={getWhatsAppLink("Halo, saya ingin bertanya tentang layanan Anda tentang Momhom SPA dan Massage")}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-2xl font-bold text-green-600 hover:text-green-700 transition-colors"
-                  >
-                    {formatWhatsAppNumber()}
-                  </a>
-                  <p className="text-slate-600 mt-2 text-sm">Klik untuk chat via WhatsApp</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-slate-100 rounded-2xl p-6">
-              <h4 className="font-semibold text-slate-900 mb-3">Jam Operasional</h4>
-              <p className="text-2xl font-bold text-blue-600">24 Jam</p>
-              <p className="text-slate-600 text-sm mt-1">Setiap hari, termasuk hari libur</p>
-            </div>
-          </motion.div>
-        </div>
       </div>
     </section>
   );

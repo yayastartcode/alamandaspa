@@ -3,7 +3,7 @@
 // WhatsApp Configuration
 // Format: country code + number without + or spaces
 // Example: 6281234567890 for +62 812-3456-7890
-export const WHATSAPP_NUMBER = "6285770720053";
+export const WHATSAPP_NUMBER = "081298303336";
 
 // Function to create WhatsApp link with message
 export function getWhatsAppLink(message?: string) {

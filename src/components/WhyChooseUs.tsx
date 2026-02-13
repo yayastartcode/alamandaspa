@@ -44,24 +44,20 @@ export function WhyChooseUs() {
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed">
               Istirahat saja kadang tidak cukup untuk membantu tubuh pulih,
-              sehingga Pijat Mom-Hom sering menjadi solusi pilihan ketika badan
-              pegal-pegal dan kecapekan. Mom-Hom solusi terbaik memijat dengan
+              sehingga Pijat Alamanda Spa sering menjadi solusi pilihan ketika badan
+              pegal-pegal dan kecapekan. Alamanda Spa solusi terbaik memijat dengan
               lembut dan bertenaga merupakan terapi tradisional yang
               bersertifikat mampu mengatasi berbagai keluhan, mulai dari
               kelelahan hingga masuk angin.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed">
-              Kota besar seperti Jakarta, Bogor, Bekasi, Depok dan Tangerang
+              Kota besar seperti  Bogor dan sekitarnya
               merupakan kota terpadat dan membuat badan butuh relaksasi, agar
-              badan lebih rilek dan segar. Mom-Hom menyediakan tenaga
+              badan lebih rilek dan segar. Alamanda Spa menyediakan tenaga
               profesional dan bersertifikat sesuai keahlian terapi. Tenaga bisa
               memilih sesuai pelanggan inginkan.
             </p>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              Oleh karena itu Mom-Hom merupakan jasa panggilan 24 jam agar dapat
-              memberikan layanan 24 Jam dan terapis datang ke lokasi customer.
-              Keuntungan yang didapatkan memilih kami:
-            </p>
+
 
             {/* Benefits List */}
             <div className="space-y-4">

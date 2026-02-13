@@ -29,7 +29,7 @@ export function Hero() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900"
           >
-            Mom-Hom Spa & Massage Panggilan 24 Jam
+            Alamanda Spa
           </motion.h1>
 
           <motion.p
@@ -38,13 +38,7 @@ export function Hero() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl sm:text-2xl text-slate-900 max-w-3xl mx-auto font-medium"
           >
-            Kami menawarkan berbagai layanan Pijat tradisional, Massage, Full
-            body treatment, Aroma therapy massage, langsung di lokasi ANDA. Anda
-            tidak perlu lagi terjebak macet atau antre di salon kebugaran. Kami
-            hadir membawa relaksasi langsung ke rumah, apartemen, atau bahkan
-            hotel Anda. Anda tidak perlu lagi terjebak macet atau antre di salon
-            kebugaran. Kami hadir membawa relaksasi langsung ke rumah,
-            apartemen, atau bahkan hotel Anda.
+            Kami menawarkan berbagai layanan pijat ditempat maupun home service ke rumah , apartment & hotel anda.
           </motion.p>
 
           <motion.div
