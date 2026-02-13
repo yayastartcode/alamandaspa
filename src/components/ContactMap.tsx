@@ -15,7 +15,7 @@ export function ContactMap() {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         title="Google Maps Location"
-        className="absolute inset-0 w-full h-full grayscale brightness-110 contrast-125 opacity-90 hover:grayscale-0 transition-all duration-700"
+        className="absolute inset-0 w-full h-full brightness-110 contrast-125 transition-all duration-700"
       />
 
       {/* Contact Overlay */}
